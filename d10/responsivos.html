@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+
+        }
+        main {
+            background-color: white;
+            padding: 70px;
+            /* gerá um espaço entre coteúdo e borda */
+            border-radius: 10px;
+
+            min-width: 320px;
+            /* se o conteúdo for menor que a largura mínima, min-width será aplicada */
+            max-width: 800px;
+            /* só fará sentido com margim auto pois o conteúdo não irá contruri uma barra de rolagem latral */
+            margin: auto
+            /* vai centralizar horizontamente o elemento em seu contêiner */
+        }
+        img {
+            width:  100%;
+            /* fará a imagem ser resposiva e aumentará e diminuirá a escala */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorum possimus nostrum quisquam rem, cupiditate, molestiae pariatur nam provident repellat sequi vero autem minus! Reprehenderit debitis quasi totam ex quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus velit porro reiciendis esse eaque amet accusamus dicta facere ducimus placeat nesciunt hic autem, quis ullam rem voluptatum pariatur facilis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nesciunt eaque voluptatum rerum minus non dolor laboriosam itaque libero fugiat ad consectetur praesentium nam corporis aliquid explicabo, reiciendis sint dolores.</p>
+        <picture>
+            <source media="(max-width 600px)">
+            <img src="imagens/irina-blok.jpg" alt="irina-blok">
+        </picture>
+    </main>
+    
+</body>
+</html>
