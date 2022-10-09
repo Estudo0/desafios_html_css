@@ -74,7 +74,7 @@ header > h1  {
 
 /* (>) combinador seleciona todos parágrafos os filhos de header, porém ignora os descendente, ou seja quam ta dentro de outras tags com asside por exemplo */
 header > p {
-    color: white;
+    font-family: var(--fonte-padrao);
     font-size:  1.2em;
     color: white;
     max-width: 500px;
@@ -84,6 +84,8 @@ header > p {
     padding-right: 10px;
     /* não irá deixa o parágrafo colodo na extremindade da página */
     margin: auto ;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
 }
 /* barra de navegação contém uma lista de links para ajudar na navegação */
 nav  {
