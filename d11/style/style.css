@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray ;
+}
+
+header {
+    background-color: black;
+    color: white;
+    /* mudar a cor das letras */
+    text-align: center;
+    /* definir o alinhamento horizontal do texto */
+}
+
+header > h1 {
+    padding-top: 50px ;
+    font-variant: small-caps;
+    /* letras minúsculas são convertidas em maiúsculas. No entanto, as letras
+    maiúsculas aparecem em um tamanho de fonte menor */
+}
+
+header > p {
+    padding-bottom: 50px;
+    /* função gerar um espaço ao redor do conteúdo de um elemento, dentor de uma borda definida */
+}
+
+/* seletor genênico suas propriedades serão aplicadas em todos elementos*  */
+a {
+    color: white;
+    text-decoration: none;
+    /* ira remover o sublinhado dos links */
+    font-weight: bolder;
+    /* vai alterar a grosura */
+}
+
+/* seletor tem peso 1 pseudo-classe tem peso 10
+tenho o combinador de espaço: sua função selecior todos os filhos  do seletor e os descendentes, ou seja links que estão dentro de outras tags que não header ou footer */
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* seletor genêrico irá servir para todas as section */
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /* padding-top/bottom irá permitir a configuração do efito paralaxi */
+    line-height: 2em;
+    /* cria um espaço entre as linas  */
+
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51) ;
+    color: white;
+}
+
+section.imagem > pre {
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 400px;
+    height: 230px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
