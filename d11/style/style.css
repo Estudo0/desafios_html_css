@@ -92,15 +92,39 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 51, 51) ;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.308);
+    background-size: cover;
 }
 
 section.imagem > pre {
     display: inline-block;
     /* fará o conteudo dentro se ajustar com o tamanho da tela */
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.486);
     height: 282px;
     padding: 20px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.308);
 }
+
+/* as section com os id jundo  às configurações da saction padding-top/bottom   permite a formação do efeito paralaxi*/
+section.img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-repeat: no-repeat;
+    /* toda imagem inseirda será repitida até ocupar todo espaço disponível.
+    No-repeat inpedirá isto. */
+ 
+    /* A áread do conteúdo será totamente coberta, porem algumas partes das imagems podem são ser visíveis */
+    background-attachment: fixed ; 
+    background-position: right center;
+}
+
+section.img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-repeat: no-repeat;
+
+    background-attachment: fixed ; 
+
+    background-position: right center;
+} 
 
 footer {
     background-color: black;
