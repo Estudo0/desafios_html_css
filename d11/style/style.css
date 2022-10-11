@@ -1,13 +1,30 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
+    
+   
 }
 
 html, body {
+    
     min-height: 100vh;
     background-color: darkgray ;
+    font-family: var(--fonte1);
+    font-size: 100%;
+    /* permitirá que o em funcione sem proplemas em todos os navegaros */
 }
 
 header {
@@ -16,6 +33,8 @@ header {
     /* mudar a cor das letras */
     text-align: center;
     /* definir o alinhamento horizontal do texto */
+   
+   
 }
 
 header > h1 {
@@ -23,6 +42,8 @@ header > h1 {
     font-variant: small-caps;
     /* letras minúsculas são convertidas em maiúsculas. No entanto, as letras
     maiúsculas aparecem em um tamanho de fonte menor */
+    font-size: 6em;
+    font-family: var(--fonte2) ;
 }
 
 header > p {
@@ -50,9 +71,15 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     /* padding-top/bottom irá permitir a configuração do efito paralaxi */
-    line-height: 2em;
+    line-height: 2.5em;
     /* cria um espaço entre as linas  */
+   
 
+}
+
+section > pre {
+    font-family: var(--fonte3);
+    font-size: 2em;
 }
 
 section.normal {
@@ -60,15 +87,19 @@ section.normal {
     color: black;
 }
 
+
+
 section.imagem {
     background-color: rgb(51, 51, 51) ;
     color: white;
 }
 
 section.imagem > pre {
+    display: inline-block;
+    /* fará o conteudo dentro se ajustar com o tamanho da tela */
     background-color: rgba(0, 0, 0, 0.274);
-    width: 400px;
-    height: 230px;
+    height: 282px;
+    padding: 20px;
 }
 
 footer {
