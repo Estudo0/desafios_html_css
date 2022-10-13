@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    /* vai ocupar toda página do navegador */
+    width: 100vw;
+    /* vai ocupar toda a largura do navegador */
+    background-color: black;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+     /* background-size com valor
+            contain: a imagem vai ser a maior possível, porem pode haver areas
+            não cobertas, irá cirar barras laterais
+            cover: a área do conteúdo vai ser totalmente coberta, porém algumas
+            partes das imagems podem não ser visíveis
+            os valores 100% 100%: irá fazer a imagem distorcer. Esta configuração
+            só será valida com height: 100vh; */
+    background-attachment: fixed;
+    
+    /* scrooll a imagem vai rolar junto com o conteúdo
+    fixed:  vai ficar fixa com o resto da página */
+
+}
+
+main {
+    height: 100vh;
+    /* caso eu diminua o 100 consigo ver o body */
+    position: relative;
+    /* permitirar alterar a posição superior inferior direita e esquerda */
+  
+
+}
+
+section#telefone {
+    position: absolute;
+    /* ira soltar  a section da posição normal sobrepondo outros elementos
+    e aqui vou poder alterar sua posição relativa */
+    height: 500px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    /* vai deixar a section no ponto superior esquedo */
+    transform: translate(-50%, -50%);
+    /* vou tirar a diferença */
+
+    background: url('../imagens/frame-iphone.png') no-repeat;
+    height: 624px;
+    width: 310px;
+    /* colcoar ../ fará voltar uma pasta.  /imagens vou abrir a pasta imagem para acessar seus conteúdos */
+
+}
+
+iframe#tela {
+    position: relative;
+    top: 81px;
+    left: 23px;
+    
+    width: 265px;
+    height: 469px;
+    /* como a imagem é muito grande vou ter mexer na largura e altura 
+    dela maunuamente. para ela ficar legal devo colocar : background-size:cover la no home.html
+
+    */
+}
