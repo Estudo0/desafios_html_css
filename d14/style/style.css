@@ -72,3 +72,29 @@ iframe#tela {
 
     */
 }
+
+/* vou selecionar todas as img dentro de saction 
+as img são filhas de da tag <a> porem não de sectiosn
+consigo pegalas com seletor de descendetes (espaço) */
+section#redes-sociais  img {
+    width: 50px;
+    /* quando eu diminuo a largura o navegado já diminu a altura */
+    margin: 10px;
+    /* vou afastar as imagens */
+    border-radius: 50% ;
+    /* vou transformar uma imagem quadrar em um circulo */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+    box-sizing: border-box;
+    /* permite incluir o preenchimento e a borda na largura e altura total de um elemento */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white ;
+    transform: translate(-3px, -3px);
+    /* vou fazer os as imagens se moverem  quando passar o mouse em cima*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555) ;
+    transition: transform 0.3s, border 0.5s;
+    /* vou criar um efeito de transição de 0.3s na propriedade transform
+    e na propriedade border 0.5s */
+}
+
