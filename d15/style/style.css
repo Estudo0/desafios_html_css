@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+:root {
+    --font: Verdana, Geneva, Tahoma, sans-serif;
+    --color01: #49a09d;
+    --color02: #5f2c82;
+
+}
+
+* {
+   font-family: var(--font) ;
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+
+}
+
+body, html {
+    background-color: var(--color02);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    /* especifica se o conteúdo deve ser recortado ou
+    adiconado barras de rolagem quando o conteúdo de uma elemtno for grande para caber na área especificada
+    o valor hideen recorta o item */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    /* tudo que tiver fora da borda ficara escondido */
+
+}
+
+section.login > figure.imagem {
+    display: block;
+    background: var(--color02) url(../imagens/metal.jpg) no-repeat;
+    background-color: cover;
+    background-position: center left  ;
+    height: 200px;
+}
+
+section.login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+
