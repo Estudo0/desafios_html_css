@@ -31,7 +31,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     background-color: white;
     width: 300px;
     height: 600px;
@@ -42,6 +42,12 @@ main {
     border-radius: 20px;
     box-shadow: 0px 0px 10px black;
     /* tudo que tiver fora da borda ficara escondido */
+
+    transform: translate(-50%, -50%);
+    transition: width .2s;
+    transition-timing-function: ease;
+    /* especifica a cruva de velocidade do efeito de 
+    transição  */
 
 }
 
@@ -58,4 +64,69 @@ section.login > div#formulario {
     padding: 10px;
 }
 
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px ;
+}
+
+#formulario > p {
+    text-align: justify;
+    margin-bottom: 10px ;
+}
+
+fieldset > label {
+    display: none;
+    
+
+}
+
+fieldset > span {
+    font-size: 2em; 
+    padding: 5px;
+}
+
+fieldset > input {
+    font-size: 1em;
+    width: calc(100% - 44px);
+    /* função calc calcula a largura de um elemnto  */
+    height: 100%; 
+    transform: translateY(-5px);
+    /* vou mecher na aultura da caixa do botão
+    deve esta em ultimo */
+}
+
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--color01);
+    color: white;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+/* input[type=submit] e um seletor de atributo usado para 
+selecionar um elemento com atributo especificado */
+form > input[type=submit]:hover {
+    background-color: var(--color02);
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    padding-top: 10px ;
+    color: var(--color01);
+
+}
+
+
+
+
+form > a.botao:hover {
+    color: var(--color02);
+
+}
 
